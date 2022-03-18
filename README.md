@@ -1,7 +1,38 @@
 mlflow
 ==============================
 
-A short description of the project.
+Projeto teste da ferramenta MLflow.
+
+Comandos
+------------
+
+- Executar interface mlflow:
+`mlflow ui`
+
+- Buscar nova dependência para inserçao no projeto:
+`conda search <NOME_PACOTE>`
+
+- Ativar o ambiente do conda já criado:
+`conda activate <NOME_ENV>`
+
+- Criar ambiente (conda) e instalar dependências do projeto:
+`conda env create --file conda.yaml -n <NOME_ENV>`
+
+- Inserir/atualizar lib do projeto (inserida no arquivo conda.yaml):
+`conda env update --file conda.yaml`
+
+
+ Opções de execução do projeto na estrutura do MLflow:
+
+- Execução do script de treino diretamente:
+`python src/models/train_model.py`
+
+- Execução do script de treino via MLproject:
+`mlflow run . -P data_file=src/models/train_model.py`
+
+Essa última opção roda o script indicado no caminho e já instala todas dependências via conda.
+
+--------
 
 Project Organization
 ------------
@@ -51,23 +82,6 @@ Project Organization
     │
     └── tox.ini            <- tox file with settings for running tox; see tox.readthedocs.io
 g
-
---------
-
-Comandos
-------------
-
-- Executar interface mlflow:
-`mlflow ui`
-
-- Criar enviroment (conda) e instalar dependências do projeto:
-`conda env create --file conda.yaml -n mlflowalura`
-
-- Buscar nova dependência para inserçao no projeto:
-`conda search <NOME_PACOTE>`
-
-- Inserir/atualizar lib do projeto (inserida no arquivo conda.yaml):
-`conda env update --file conda.yaml`
 
 --------
 
