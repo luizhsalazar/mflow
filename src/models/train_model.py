@@ -53,6 +53,5 @@ def main():
         mlflow.log_metric('rmse', rmse)
         mlflow.log_metric('r2', r2)
 
-
 if __name__ == '__main__':
     main()

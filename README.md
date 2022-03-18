@@ -38,6 +38,14 @@ Comandos do MLflow (execução e treino):
 
 Essa última opção roda o script indicado no caminho e já instala todas dependências via conda.
 
+Predição dos modelos (após modelo treinado):
+
+- Por meio de script manual:
+`python src/models/predict_model.py`
+
+- Por meio da API do mlflow:
+`mlflow models predict -m 'runs:/<RUN_ID>/model' -i 'data/processed/casas_X.csv' -t 'csv' -o 'precos2.csv'`
+
 --------
 
 Project Organization
