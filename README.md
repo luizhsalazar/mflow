@@ -50,7 +50,24 @@ Project Organization
     │       └── visualize.py
     │
     └── tox.ini            <- tox file with settings for running tox; see tox.readthedocs.io
+g
 
+--------
+
+Comandos
+------------
+
+- Executar interface mlflow:
+`mlflow ui`
+
+- Criar enviroment (conda) e instalar dependências do projeto:
+`conda env create --file conda.yaml -n mlflowalura`
+
+- Buscar nova dependência para inserçao no projeto:
+`conda search <NOME_PACOTE>`
+
+- Inserir/atualizar lib do projeto (inserida no arquivo conda.yaml):
+`conda env update --file conda.yaml`
 
 --------
 
