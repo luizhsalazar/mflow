@@ -6,6 +6,13 @@ Projeto teste da ferramenta MLflow.
 Comandos
 ------------
 
+Comandos de ambiente local:
+
+- Ativa como default o python3 como python no path (zshell):
+``echo "export PATH=\"`python3 -m site --user-base`/ bin:\$PATH\"" >> ~/.zshrc``
+
+Comandos do MLflow (execução e treino):
+
 - Executar interface mlflow:
 `mlflow ui`
 
@@ -20,7 +27,6 @@ Comandos
 
 - Inserir/atualizar lib do projeto (inserida no arquivo conda.yaml):
 `conda env update --file conda.yaml`
-
 
  Opções de execução do projeto na estrutura do MLflow:
 
